@@ -3,7 +3,7 @@ from verysimplemathcaptcha import VerySimpleMathCaptcha
 outputStr = """
 Welcome to tests for VerySimpleMathCaptcha
 
-Test string: {}
+Test string: 
 Test id: {}
 """
 
@@ -11,9 +11,9 @@ def testCaptcha():
     captcha = VerySimpleMathCaptcha(using_settings=False)
     test = captcha.genTest()
     print(outputStr.format(
-        test[1],
         test[0]
     ))
+    test[1].show()
     for i in range(2):
         print("===============")
         answer = raw_input("Answer: ")
