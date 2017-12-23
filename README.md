@@ -12,12 +12,12 @@ It asks you a simple math question (eg `1 + 2 =`) and validates the form if your
 Add the following in your `views.py`:
 
 ```python
-    from verysimplemathcaptcha import VerySimpleMathCaptcha
+from verysimplemathcaptcha import VerySimpleMathCaptcha
         
-    def some_page(request):
-		CaptchaObject = VerySimpleMathCaptcha()
-		if form.is_valid() and CaptchaObject.isValid(request.POST['captcha_id'], request.POST['captcha_answer']):
-			...
+def some_page(request):
+	CaptchaObject = VerySimpleMathCaptcha()
+	if form.is_valid() and CaptchaObject.isValid(request.POST['captcha_id'], request.POST['captcha_answer']):
+		pass
 ```
 
 Now the contact form will block robots who cant do math.
