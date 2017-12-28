@@ -24,16 +24,16 @@ Now the contact form will block robots who cant do math.
 
 ## Settings
 
-Set the behavior of the math captcha interaction in your ``settings.py``
+Set the behavior of the math captcha interaction in your `settings.py`
 
-```
-VERYSIMPLEMATHCAPTCHA_USING_PIL = True`
+```python
+VERYSIMPLEMATHCAPTCHA_USING_PIL = True
 ```
 
 String containing mathematical operators to use. Default is only add (`+`) and subtract (`-`).
 Available operators are: add (`+`), subtract (`-`), multiply (`*`) and divide (`/`)
 
-```
+```python
 MATH_CAPTCHA_QUESTION = 'Are you human?'
 ```
 
